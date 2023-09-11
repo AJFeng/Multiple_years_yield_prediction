@@ -23,10 +23,12 @@ Fig. 3. Illustration of the convolutional neural network for soil (S_CNN). Soil 
 Fig. 4. Illustration of W_CNN. Weekly weather data from May 1 to October 29 were used. The first 13 weeks included dates from May 1 to July 30, week14-week18 included dates from July 31 to September 3, week19-week22 included dates from September 4 to October 1 and week 23 to week 26 included dates from October 2 to October 29. Weather feature abbreviations are: P- total precipitation (irrigation data included), Tmax- maximum air temperature, Tmin- minimum air temperature, SR- total solar radiation, VP- vapor pressure, and ETo- evapotranspiration from a reference crop. W1-W26 means week1-week26 after planting.
 
 ![alt text](https://github.com/AJFeng/Multiple_years_yield_prediction/blob/main/figures/Picture3.png)
+
 Fig. 6. The architecture of the GRU network. SL is sequence length, which was set to 1 in this study. BZ is the batch size for the training procedure. FCL means a fully connected layer. IF is the image feature (i.e. NDVI). All the GRUs highlighted with yellow colour were the same loop processing unit in the network and had the same parameters. All FCL_1 units highlighted with green colour were using the same parameters.
 
 ## Results
 ![alt text](https://github.com/AJFeng/Multiple_years_yield_prediction/blob/main/figures/Picture4.png)
+
 Fig. 9. Yield prediction results: (a) The data sets of 2019E and 2018W were used for training to predict the yield in 2017E; (b) The data sets of 2019E and 2017E were used for training to predict the yield in 2018W; (c) The data sets of 2018W and 2017E were used for training to predict the yield in 2019E; (d) The data sets of 2018W and 2017E were used for training to predict the yield in 2019W. Note, because no image NDVI was available in 2019W, the result in (d) is equal to the result of WO_TF_test.
 
 ![alt text](https://github.com/AJFeng/Multiple_years_yield_prediction/blob/main/figures/Picture5.png)
